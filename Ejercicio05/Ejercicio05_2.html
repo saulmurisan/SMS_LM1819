@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="" method="POST">
+        <label>Nombre de usuario:</label>
+        <input type="text" value="" name="usuario" autofocus="autofocus" placeholder="Usuario" required="required" autocomplete="username"/>
+        <br/>
+        <label>Contraseña:</label>
+        <input type="password" name="pass" minlength="8" pattern="" required="required"/>
+        <br/>
+        <label>Número:</label>
+        <input type="number" name="número" pattern="[0-9]"/>
+        <br/>
+        <label>Fichero:</label>
+        <input type="file" multiple/>
+        <br/>
+        <label>Provincia:</label>
+        <input list="Provincias"/>
+        <datalist id="Provincias">
+            <option value="Sevilla">Sevilla</option>
+            <option value="Cádiz">Cádiz</option>
+            <option value="Huelva">Huelva</option>
+            <option value="Málaga">Málaga</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Granada">Granada</option>
+            <option value="Almería">Almería</option>
+            <option value="Jaén">Jaén</option>
+        </datalist>
+        <br/>
+        <label>Progreso:</label>
+        <progress></progress>
+        <br/>
+        <input type="submit" value="Enviar"/>
+    </form>    
+</body>
+</html>

@@ -11,8 +11,38 @@
         <label>Nombre:</label>
         <input type="text" value="" name="nombre" pattern="[a-Z]"/>
         <br/>
-        <input type="email" pattern="[a-z]"
-
+        <label>Correo electrónico:</label>
+        <input type="email" value="" name="email" pattern="*@-.-"/>
+        <br/>
+        <label>URL:</label>
+        <input type="url" value="" name="url" pattern="http://.+" placeholder="Escribe la URL de tu página web personal"/>
+        <br/>
+        <label>Fecha:</label>
+        <input type="date" name="fecha"/>
+        <br/>
+        <label>Tiempo:</label>
+        <input type="time" name="tiempo"/>
+        <br/>
+        <label>Fecha y hora:</label>
+        <input type="datetime-local" name="fecha y hora"/>
+        <br/>
+        <label>Mes:</label>
+        <input type="month" name="mes"/>
+        <br/>
+        <label>Semana:</label>
+        <input type="week" name="semana"/>
+        <br/>
+        <label>Número (min -10, max 10)</label>
+        <input type="number" name="número" min="-10" max="10"/>
+        <br/>
+        <label>Teléfono:</label>
+        <input type="tel" name="teléfono" pattern="[0-9]{9}"/>
+        <br/>
+        <label>Término de búsqueda:</label>
+        <input type="search" name="búsqueda"/>
+        <br/>
+        <label>Color favorito:</label>
+        <input type="color" name="color"/>
         <br/>
         <input type="submit" value="Enviar"/>
     </form>
