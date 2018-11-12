@@ -16,7 +16,7 @@
                 </tr>
                 <tr>
                     <td><label>Contraseña:</label></td>
-                    <td><input type="password" name="pass" minlength="8" pattern="[0-9]{1}[A-Za-z0-9]{6,}[A-Z]{1}" required="required"/></td>
+                    <td><input type="password" name="pass" minlength="8" pattern="[0-9a-zA-Z]{8-20}" required="required"/></td>
                 </tr>
                 <tr>
                     <td><label>Correo electrónico:</label></td>
@@ -91,6 +91,10 @@
                 <tr>
                     <td><label>Descripción:</label> </td>
                     <td><textarea name="descripcion" rows="8" cols="40" maxlength="100"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><progress></progress></td>
                 </tr>
                 <tr>
                     <td><input type="submit" value="Enviar"/></td>
