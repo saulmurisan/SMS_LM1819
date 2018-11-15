@@ -3,17 +3,82 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Formulario Videojuegos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 
-    <meta />
-    <meta />
-    <meta />
+    <meta name="description" content="Esta es una página que contiene un formulario sobre videojuegos"/>
+    <meta name="keywords" content="Formulario, Videojuegos, Plataforma" />
+    <meta name="robots" content="Index, Follow" />
+    <meta name="language" content="ES" />
 
 </head>
 <body>
-    
+   <div style="width: 1080px; height: 500px; border: 2px solid black ; border-radius: 30px 30px 30px 30px; background: forestgreen" >
+        <div style="width: 500px; height: 480px; border: 2px solid darkblue; border-radius: 20px 20px 20px 20px; float: left; position: relative; left: 20px; top: 10px; background: white">
+            <form action="" method="GET">
+                <table>
+                    <tr>
+                        <td colspan="2" style="text-align: center">Formulario sobre videojuegos</td>
+                    </tr>
+                    <tr>
+                        <td><label for="videojuego">¿Te gustan los videojuegos?</label></td>
+                        <td><input type="radio" name="videojuego" id="videojuego" value="S" required="required" checked="checked" />Sí
+                            <input type="radio" name="videojuego" id="videojuego" value="N" />No 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>¿Cuánto?</label></td>
+                        <td><input type="range" min="0" max="10" step="1" list="tickmarks" /> </td>
+                    </tr>
+                    <tr>
+                        <td><label>¿Cuál es tu videojuego favorito?</label></td>
+                        <td><input type="text" value="" name="favorito" /></td>
+                    </tr>
+                    <tr>
+                        <td><label>¿Que tipos de videojuegos te gustan?</label></td>
+                        <td><input type="checkbox" name="Deportes" value="De" />Deportes
+                            <input type="checkbox" name="Acción" value="Ac" />Acción <br/>
+                            <input type="checkbox" name="Aventura" value="Av" />Aventura
+                            <input type="checkbox" name="Rol" value="Rol" />Rol  <br/>
+                            <input type="checkbox" name="MOBA" value="M" />MOBA
+                            <input type="checkbox" name="Pelea" value="Pe" />Pelea <br/>
+                            <input type="checkbox" name="MMORPG" value="MMO" />MMORPG (Multi Masive Online Rol Playing Game) <br/>
+                            <input type="checkbox" name="FPS" value="FPS" />FPS (First Person Shooter) 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="plataforma">¿En qué tipo de plataforma juegas?</label></td>
+                        <td><input type="radio" name="plataforma" id="plataforma" value="Con" />Consola
+                            <input type="radio" name="plataforma" id="plataforma" value="PC" /> PC
+                            <input type="radio" name="plataforma" id="plataforma" value="Ambas" /> Ambas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Si juegas en consola, ¿en cuál?</label></td>
+                        <td><input list="consola"/>
+                            <datalist id="consola">
+                                <option value="PS3">PS3</option>
+                                <option value="PS4">PS4</option>
+                                <option value="XBOX">XBOX</option>
+                                <option value="Nintendo Switch">Nintendo Switch</option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Enviar" /> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center">Muchas gracias por realizar este formulario</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div style="width: 500px; height: 480px; border: 2px solid darkblue; border-radius: 20px 20px 20px 20px; float: left; position: relative; left: 40px; top: 10px; background: white" >
+            <div style="width: 470px; height: 220px; border: 2px solid darkblue; border-radius: 20px 20px 20px 20px; float: left; position: relative; left: 10px; top: 10px" ></div>
+            <div style="width: 470px; height: 220px; border: 2px solid darkblue; border-radius: 20px 20px 20px 20px; float: left; position: relative; left: 10px; top: 20px" ></div>
+        </div>
+   </div> 
 </body>
 </html>
