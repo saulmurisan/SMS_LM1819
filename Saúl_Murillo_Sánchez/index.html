@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PRUEBA PRÁCTICA HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <span style="font-style: italic">Texto enfatizado</span>
+    <br/>
+    <span style="font-weight: bold">Texto en negrita</span>
+    <br/>
+    <span style="font-style: italic">Texto definición</span>
+    <br/>
+    <span style="font-family: 'Courier New', Courier, monospace">Texto código fuente de ordenador</span>
+    <br/>
+    <span style="font-family: 'Courier New', Courier, monospace">Texto ejemplo de código fuente de ordenador</span>
+    <br/>
+    <span style="font-family: 'Courier New', Courier, monospace">Texto de teclado</span>
+    <br/>
+    <span style="font-style: italic">Variable</span>
+    <br/>
+    <span>En esta línea se muestra un <del>texto tachado</del> y se simula <ins>una corrección</ins></span>
+    <br/>
+    <span style="font-style: italic">Esto es una cita Cita</span>
+    <br/>
+    <span style="font-size: 20px">Este texto más grande</span> <span style="font-size: 12px">y este texto más grande</span>
+    <br/>
+    <span>En esta línea tenemos</span> <sup>texto en superíndice</sup> <span>y</span> <sub>texto en subíndice</sub>
+    <br/>
+    <pre>             El texto en una etiqueta 'pre' mantiene los espacios        y
+saltos de línea
+    </pre>
+    <br/>
+
+    <div style="background: yellow; width: 400px; height: 230px"> <p style="text-align: center; color: orange; font-weight: bold; font-size: 24px; padding-top: 5px">Lista de enlaces</p>
+        <li style="padding-left: 20px">Buscadores
+            <ul>
+                <li> <a href="https://www.bing.com">Bing</a> </li>
+                <li> <a href="https://www.google.es">Google</a> </li>
+            </ul>
+        </li>
+        <li style="padding-left: 20px">Redes sociales
+            <ul>
+                <li> <a href="https://facebook.com">Facebook</a> </li>
+                <li> <a href="https://twitter.com">Twitter</a> </li>
+            </ul>
+        </li>
+    </div>
+    <br/>
+    <div style="width: 800px; height: 300px">
+        <div style="float: left"><h3>Encabezado Izquierda</h3>
+        <img src="mar.JPG" alt="mar" width="300px" height="200px" /> <p style="font-size: 14px; font-weight: bold">Fig. 1 Descripción de la imagen</p> </div>
+        <div style="float: left; padding-top: 50px; padding-left: 10px"><p style="font-size: 20px">La música es, según la definición <br/> tradicional del término, el arte de <br/> organizar sensible y lógicamente una <br/> combinación coherente de sonidos y <br/> silencios utilizando los principios <br/> fundamentales de la melodía, la <br/> armonía y el ritmo, mediante la <br/> intervención de complejos procesos <br/> psico-armónicos. </p> </div>
+    </div>
+    <br/>
+    <br/>
+
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <td style="text-align: right"><span>Asunto:</label></td>
+                <td><input type="text" value="" name="asunto" size="40"/></td>
+            </tr>
+            <tr>
+                <td style="text-align: right"><label>* Primer Apellido:</label></td>
+                <td><input type="text" value="" name="primer" size="30" required="required"/></td>
+            </tr>
+            <tr>
+                <td style="text-align: right"><label>Segundo Apellido:</label></td>
+                <td><input type="text" value="" name="segundo" size="30"/></td>
+            </tr>
+            <tr>
+                <td style="text-align: right"><label>* Nombre:</label></td>
+                <td><input type="text" value="" name="nombre" size="30" required="required"/></td>
+            </tr>
+            <tr>
+                <td style="text-align: right"><label>D.N.I / Pasaporte / N.I.E:</label></td>
+                <td><input type="text" value="" name="DNI" size="20"/></td>
+            </tr>
+            <tr>
+                <td style="text-align: right"><label>* Correo electrónico:</label></td>
+                <td><input type="email" value="" name="email" pattern="*@-.-" size="30" required="required"/></td>
+            </tr>
+            <tr>
+                <td style="text-align: right"><label>Teléfono:</label></td>
+                <td><input type="tel" name="telefono" pattern="[0-9]{9}"/></td>
+            </tr>
+            <tr>
+                <td style="text-align: right"><label>¿Sobre qué?:</label></td>
+                <td><input list="sobre"/>
+                <datalist id="sobre">
+                    <option value="1">1
+                    <option value="2">2
+                </datalist></td>
+            </tr>
+            <tr>
+                <td style="text-align: right"><label>¿Qué va a escribir?:</label></td>
+                <td><input list="escribir" size="10"/>
+                <datalist id="escribir">
+                    <option value="1">1
+                    <option value="2">2
+                </datalist></td>
+            </tr>
+            <tr>
+                <td style="text-align: right; padding-bottom: 60px"><label>* Texto del escrito</label></td>
+                <td><textarea name="escrito" rows="4" cols="40" required="required"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p style="font-weight: bold">Los datos personales facilitados son susceptibles de cesión cuando esta sea <br/> precisa para tramitar su contestación.</p></td>
+            </tr>
+            <tr>
+                <td><input type="submit"/></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+    <br/>
+    <br/>
+
+    <div style="width: 798px; height: 508px; background: blue"><p style="color: white; font-size: 30px; text-align: center; padding-top: 20px">TÍTULO DE LA PÁGINA</p>
+        <div style="float: left; width: 610; height: 420">
+            <div style="width: 600px; height: 100px; background: lime; border: 4px solid grey"><p style="color: white; font-size: 30px; text-align: center">CAPA 1</p></div>
+            <div style="width: 600px; height: 100px; background: lime; border-left: 4px solid grey; border-right: 4px solid grey; border-top: 1px solid grey; border-bottom: 1px solid grey"><p style="color: white; font-size: 30px; text-align: center">CAPA 2</p></div>
+            <div style="width: 600px; height: 100px; background: lime; border: 4px solid grey"><p style="color: white; font-size: 30px; text-align: center">CAPA 3</p></div>
+            <div style="width: 600px; height: 100px; background: lime; border-left: 4px solid grey; border-right: 4px solid grey; border-top: 1px solid grey; border-bottom: 4px solid grey"><p style="color: white; font-size: 30px; text-align: center">CAPA 4</p></div>
+        </div>
+        <div style="float: left; width: 190px; height: 420px">
+            <div style="width: 180px; height: 205px; background: deepskyblue; border: 4px solid darkgrey"><p style="color: white; font-size: 30px; text-align: center; padding-top: 50px">CAPA 5</p></div>
+            <div style="width: 180px; height: 205px; background: deepskyblue;border-left: 4px solid darkgrey; border-right: 4px solid darkgrey; border-top: 1px solid darkgrey; border-bottom: 4px solid grey"><p style="color: white; font-size: 30px; text-align: center; padding-top: 50px">CAPA 6</p></div>
+        </div>
+    </div>
+    <div style="width: 798px; height: 30px; background: red"></div>
+</body>
+</html>
