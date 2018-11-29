@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font: bold 20px;
+    color: red;
+}
+
+#contenedor {
+    width: 960px;
+    margin: 15px auto;
+    text-align: left;
+    border: 5px solid black;
+    background: lightyellow;
+}
+
+#imagen {
+    padding: 10px;
+    height: 90px;
+    width: 90px;
+}
+
+
+#cabecera {
+    background: lightgreen;
+    padding: 10px;
+}
+
+#texcab {
+    color: green;
+    font-size: 14px;
+}
+
+#menu {
+    background: cornflowerblue;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 7px;
+    padding-right: 10px;
+    border-right: 1px solid blue;
+    color: blue;
+}
+
+#seccion {
+    width: 750px;
+    margin: 20px;
+    background: lightsalmon
+}
+
+#menuart {
+    background: lightsalmon;
+    border-top: 1px solid orangered;
+    border-bottom: 1px solid orangered;
+}
+#menuli2 {
+    display: inline-block;
+    list-style: none;
+    padding: 7px;
+    color: darkcyan;
+}
+
+#headart {
+    color: darkcyan;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#espacio {
+    background: chocolate;
+    width: 750px;
+    height: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#textart {
+    color: orangered;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footart {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid orangered;
+}
+
+#foottexart {
+    color: orangered;
+    font-size: 12px;
+}
+
+#seg {
+    color: darkcyan;
+    font-size: 12px;
+}
