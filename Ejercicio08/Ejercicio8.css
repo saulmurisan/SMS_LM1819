@@ -10,7 +10,8 @@ h1 {
 }
 
 #contenedor {
-    width: 960px;
+    width: 1080px;
+    height: 700px;
     margin: 15px auto;
     text-align: left;
     border: 5px solid black;
@@ -103,4 +104,27 @@ h1 {
 #seg {
     color: darkcyan;
     font-size: 12px;
+}
+
+#columna {
+    position: relative;
+    left: 800px;
+    bottom: 510px;
+    width: 200px;
+    margin: 20px 0px;
+    padding: 5px;
+    background: #cccccc;
+}
+
+#licol1 {
+    display: inline-block;
+    list-style: none;
+    font-size: 13px;
+    padding: 5px;
+    color: grey;
+}
+
+#imgder {
+    width: 30px;
+    height: 30px;
 }
