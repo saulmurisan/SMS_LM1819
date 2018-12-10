@@ -4,6 +4,10 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+    background: grey;
+}
+
 h1 {
     font: bold 20px;
     color: red;
@@ -11,7 +15,7 @@ h1 {
 
 #contenedor {
     width: 1080px;
-    height: 700px;
+    height: 750px;
     margin: 15px auto;
     text-align: left;
     border: 5px solid black;
@@ -110,21 +114,42 @@ h1 {
     position: relative;
     left: 800px;
     bottom: 510px;
-    width: 200px;
-    margin: 20px 0px;
-    padding: 5px;
-    background: #cccccc;
+    width: 220px;
+    height: 520px;
+    background: rgb(196, 186, 207);
 }
 
-#licol1 {
-    display: inline-block;
-    list-style: none;
-    font-size: 13px;
+#divcol {
+    border: rgba(122, 115, 129, 0.377) solid 1px;
+    background: rgba(160, 153,168, 0.767);
+    padding: 5px;
+}
+
+#spancol {
+    font-size: 14px;
     padding: 5px;
     color: grey;
+    font-weight: bold;
 }
 
 #imgder {
     width: 30px;
     height: 30px;
+    padding: 2px;
+}
+
+#cursohtml {
+    width: 200px;
+    height: 300px;
+    padding-left: 10px;
+}
+
+#licol2 {
+    font-size: 13px;
+    padding: 7px;
+    padding-left: 20px;
+}
+
+#spancolder {
+    color: blue
 }
