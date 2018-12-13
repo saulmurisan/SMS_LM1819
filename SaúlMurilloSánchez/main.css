@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header, section, footer, aside, nav, article {
+    display: block;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor {
+    width: 960px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+#cabecera {
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    color: grey;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#enviar {
+    color: grey;
+    padding: 5px;
+    position: relative;
+    left: 800px;
+}
+
+#menu {
+    padding: 5px 15px;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    color: grey;
+}
+
+#cabsec {
+    background: gray;
+    color: white;
+    padding: 15px;
+}
+
+section h1 {
+    text-align: left;
+    font-size: 35px;
+    font-style: italic;
+}
+
+section p {
+    padding: 15px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+section div div {
+    padding: 15px;
+    border: solid 1px grey;
+    width: 300px;
+    height: 160px;
+    position: relative;
+    float: left;
+    left: 10px;
+    top: 20px;
+}
+
+.derecha {
+    background: grey;
+    width: 100px;
+    height: 160px;
+    text-align: center;
+}
+
+.espacio {
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+.gris {
+    color: grey;
+    font-size: 12px;
+}
+
+.letra {
+    font-size: 14px;
+}
+
+.azul {
+    color: blue;
+}
+
+.verde {
+    color: green;
+}
+
+.blanco {
+    color: white;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    color: grey;
+    padding: 50px;
+}
