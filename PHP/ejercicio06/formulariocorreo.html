@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario Correo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="resulcorreo.php" enctype="multipart/form-data" method="POST">
+        <p><label>Correo: </label>
+        <input type="text" name="correo" id="correo"></p>
+        <label for="email">Confirmación: </label>
+        <input type="text" name="confirmacion" id="confirmacion" /> <br/>
+        <label>¿Desea recibir noticias?</label>
+        <select name="opcion" id="opcion">
+            <option value="-1" selected></option>
+            <option value="0">Sí</option>
+            <option value="1">No</option>
+        </select>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
