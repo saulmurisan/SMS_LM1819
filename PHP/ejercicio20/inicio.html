@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="insertar.php" method="POST">
+        <p>
+            <label for="nombre">Nombre Alumno</label>
+            <input type="text" name="nombre" id="nombre"/>
+        </p>
+        <p>
+            <label for="email">Email Alumno</label>
+            <input type="email" name="email" id="email"/>
+        </p>
+        <p>
+            <label for="curso">Curso Alumno</label>
+            <select name="curso" id="curso">
+                <option value="1">PHP</option>
+                <option value="2">ASP</option>
+                <option value="3">JSP</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar"/>
+        </p>
+    </form>
+</body>
+</html>
