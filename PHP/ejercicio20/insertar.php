@@ -13,28 +13,21 @@
     </head>
     <body>
         <div class="container">
-            <h2>Insertar Alumno</h2>
-            <form action="insertar.php" method="post">
-                <div class="form-group">
-                    <label for="nombre">Nombre Alumno</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Alumno</label>
-                    <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="curso">Curso Alumno</label>
-                    <select name="curso" class="form-control" >
-                        <option value="1">PHP</option>
-                        <option value="2">ASP</option>
-                        <option value="3">JSP</option>
-                    </select>
-                </div>
-                <p>
-                    <input type="submit" class="btn btn-primary btn-block" value="Insertar">
-                </p>
-            </form>
+            <?php
+            $nombre = trim(htmlspecialchars($_REQUEST["nombre"], ENT_QUOTES, "UTF-8"));
+            $email = trim(htmlspecialchars($_REQUEST["email"], ENT_QUOTES, "UTF-8"));
+            $curso = trim(htmlspecialchars($_REQUEST["curso"], ENT_QUOTES, "UTF-8"));
+
+            $conexion = mysqli_connect("localhost", "root", "", "cursophp") 
+                or die("Problemas de conexión");
+
+            mysqli_query($conexion, "INSERT INTO alumnos(nombre, mail, codigocurso) VALUES ('$nombre','$email',$curso)") 
+                or die("Problemas en el insert".mysqli_error($conexion));
+
+            mysqli_close($conexion);
+
+            print "<h2>Alumno dado de Alta</h2>"
+            ?>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

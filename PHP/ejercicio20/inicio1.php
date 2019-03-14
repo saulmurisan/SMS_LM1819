@@ -13,8 +13,8 @@
     </head>
     <body>
         <div class="container">
-            <h2>Insertar Alumno</h2>
-            <form action="insertar.php" method="post">
+            <h2>Insertar Alumno con Join</h2>
+            <form action="insertar1.php" method="post">
                 <div class="form-group">
                     <label for="nombre">Nombre Alumno</label>
                     <input type="text" class="form-control" name="nombre" id="nombre" required>
@@ -26,9 +26,17 @@
                 <div class="form-group">
                     <label for="curso">Curso Alumno</label>
                     <select name="curso" class="form-control" >
-                        <option value="1">PHP</option>
-                        <option value="2">ASP</option>
-                        <option value="3">JSP</option>
+                        <?php
+                        $conexion = mysqli_connect("localhost", "root", "", "cursophp") 
+                            or die("Problemas de conexion");
+
+                        $registros = mysqli_query($conexion, "SELECT idCurso, nombreCurso FROM cursos")
+                            or die("Problemas en el select".mysqli_error($conexion));
+
+                        while ($reg = mysqli_fetch_array($registros)) {
+                            echo "<option value='$reg[idCurso]'>$reg[nombreCurso]</option>";
+                        }
+                        ?>
                     </select>
                 </div>
                 <p>

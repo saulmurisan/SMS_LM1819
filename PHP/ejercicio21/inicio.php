@@ -13,22 +13,38 @@
     </head>
     <body>
         <div class="container">
-            <h2>Insertar Alumno</h2>
+            <h2>Insertar Producto</h2>
             <form action="insertar.php" method="post">
                 <div class="form-group">
-                    <label for="nombre">Nombre Alumno</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" required>
+                    <label for="producto">Id Producto</label>
+                    <input type="text" class="form-control" name="producto" id="producto" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email Alumno</label>
-                    <input type="email" class="form-control" name="email" id="email" required>
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion" required>
                 </div>
                 <div class="form-group">
-                    <label for="curso">Curso Alumno</label>
-                    <select name="curso" class="form-control" >
-                        <option value="1">PHP</option>
-                        <option value="2">ASP</option>
-                        <option value="3">JSP</option>
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" class="form-control" name="cantidad" id="cantidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio</label>
+                    <input type="number" class="form-control" name="precio" id="precio" required>
+                </div>
+                <div class="form-group">
+                    <label for="proveedor">Proveedor</label>
+                    <select name="proveedor" class="form-control" >
+                        <?php
+                        $conexion = mysqli_connect("localhost", "root", "", "bdejemplo") 
+                            or die("Problemas de conexion");
+
+                        $registros = mysqli_query($conexion, "SELECT idProveedor, nombre FROM proveedores")
+                            or die("Problemas en el select".mysqli_error($conexion));
+
+                        while ($reg = mysqli_fetch_array($registros)) {
+                            echo "<option value='$reg[idProveedor]'>$reg[nombre]</option>";
+                        }
+                        ?>
                     </select>
                 </div>
                 <p>
