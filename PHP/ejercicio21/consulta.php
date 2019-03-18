@@ -26,7 +26,7 @@
                     echo "<p>Precio total = " . $reg['preciototal'] . "</p>";
                     echo "<p>Cantidad de productos = " . $reg['cantidadtotal'] . "</p>";
                 }
-            
+                
             mysqli_close($conexion);
             ?>
             <a class="btn btn-primary" href="inicio.php" role="button">Insertar producto</a>
