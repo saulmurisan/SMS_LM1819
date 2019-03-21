@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Insertar</title>
+        <title>Inicio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet"
@@ -14,21 +14,19 @@
     <body>
         <div class="container">
             <?php
-            $producto = trim(htmlspecialchars($_REQUEST["producto"], ENT_QUOTES, "UTF-8"));
-            $descripcion = trim(htmlspecialchars($_REQUEST["descripcion"], ENT_QUOTES, "UTF-8"));
-            $cantidad = trim(htmlspecialchars($_REQUEST["cantidad"], ENT_QUOTES, "UTF-8"));
-            $precio = trim(htmlspecialchars($_REQUEST["precio"], ENT_QUOTES, "UTF-8"));
-            $proveedor = trim(htmlspecialchars($_REQUEST["proveedor"], ENT_QUOTES, "UTF-8"));
+            $nombre = trim(htmlspecialchars($_REQUEST["nombre"], ENT_QUOTES, "UTF-8"));
+            $email = trim(htmlspecialchars($_REQUEST["email"], ENT_QUOTES, "UTF-8"));
+            $curso = trim(htmlspecialchars($_REQUEST["curso"], ENT_QUOTES, "UTF-8"));
 
-            $conexion = mysqli_connect("localhost", "root", "", "bdejemplo") 
+            $conexion = mysqli_connect("localhost", "root", "", "cursophp") 
                 or die("Problemas de conexión");
 
-            mysqli_query($conexion, "INSERT INTO productos(idProductos, descripcion, cantidad, precio, idProveedor) VALUES ('$producto','$descripcion',$cantidad,$precio,$proveedor)") 
+            mysqli_query($conexion, "INSERT INTO alumnos(nombre, mail, codigocurso) VALUES ('$nombre','$email',$curso)") 
                 or die("Problemas en el insert".mysqli_error($conexion));
 
             mysqli_close($conexion);
 
-            print "<h2>Producto añadido</h2>"
+            print "<h2>Alumno dado de Alta</h2>"
             ?>
         </div>
         <!-- Optional JavaScript -->
