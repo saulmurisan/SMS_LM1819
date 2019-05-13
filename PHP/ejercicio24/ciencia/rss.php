@@ -17,12 +17,11 @@ echo '<description>Canal de noticias de ciencia</description>';
 
 while ($reg = mysqli_fetch_array($registros)) {
     echo '<item>';
-        echo '<cientifico>'.$reg[cientifico].'</cientifico>';
-        echo '<experimento>'.$reg[experimento].'</experimento>';
-        echo '<departamento>'.$reg[departamento].'</departamento>';
-        echo '<articulo>'.$reg[articulo].'</articulo>';
-        echo '<pubDate>'.$reg[fecha].'</pubDate>';
+        echo '<title>'.$reg[titulo].'</title>';
         echo '<link>'.'</link>';
+        echo '<pubDate>'.$reg[fecha].'</pubDate>';
+        echo '<category>'.$reg[categoria].'</category>';
+        echo '<description>'.$reg[noticia].'</description>';
     echo '</item>';
 }
 

@@ -17,12 +17,11 @@ echo '<description>Canal de noticias de hormigas</description>';
 
 while ($reg = mysqli_fetch_array($registros)) {
     echo '<item>';
-        echo '<raza>'.$reg[raza].'</raza>';
-        echo '<nombre>'.$reg[nombre].'</nombre>';
-        echo '<tamano>'.$reg[tamano].'</tamano>';
-        echo '<description>'.$reg[descripcion].'</description>';
-        echo '<pubDate>'.$reg[fecha].'</pubDate>';
+        echo '<title>'.$reg[titulo].'</title>';
         echo '<link>'.'</link>';
+        echo '<pubDate>'.$reg[fecha].'</pubDate>';
+        echo '<category>'.$reg[categoria].'</category>';
+        echo '<description>'.$reg[noticia].'</description>';
     echo '</item>';
 }
 
